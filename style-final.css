@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+nav {
+	display:flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color:royalblue;
+}
+
+.logo {
+    cursor:pointer;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.nav-links {
+	display: flex;
+	justify-content:space-around;
+	width: 50%;
+}
+
+.nav-links li {
+	list-style: none;
+    padding-top: 10px;
+}
+
+.nav-links a {
+	color: black;
+	text-decoration:none;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.nav-links li a:hover {
+    color: white;
+}
+
+.Name {
+    line-height: 300px;
+    margin-top: -50px;
+}
+
+h2 {
+    line-height: 40px;
+    margin-right: -150px;
+    padding-left: 15px;
+}
+
+.Cart {
+    padding: 5px 50px;
+	background-color: white;
+	border: none; 
+	border-radius: 50px;
+	cursor: pointer;
+    font-size:16px;
+    font-weight: bold;
+    height: 35px;
+}
+
+.SearchBar { 
+    float:center;
+}
+
+input[type=text] {
+    width: 750px;
+    text-align: center;
+    padding: 7px;
+    border: none; 
+    border-radius: 50px;
+    margin-left: 10px;
+}
+
+
+.parent {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 400px;
+    margin-top: 190px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+    text-align: center;
+    margin-left: 250px;
+}
+
+.Rating {
+    margin-left: 85px;
+    margin-top: -110px;
+}
+
+.Description {
+    font-size: 20px;
+    margin-top: 30px;
+    text-align: center;
+    margin-left: 5px;
+}
+
+.Fit {
+    margin-top: 50px;
+    margin-right: 400px;
+    padding-left: 5px;
+    width: 100%;
+}
+
+.price {
+    line-height: 100px;
+    font-size: 40px;
+    margin-left: 5px;
+}
+
+.AddCart {
+    margin-left: 23px;
+}
+
+.ItemColor {
+    margin-left: 380px;
+}
+
+.Color1 {
+    padding: 2px 11px;
+    border-radius: 100%;
+    background-color:midnightblue;
+    margin-right: 10px;
+}
+
+.Color2 {
+    padding: 2px 11px;
+    border-radius: 100%;
+    background-color: orange;
+    margin-right: 10px;
+}
+
+.Color3 {
+    padding: 2px 11px;
+    border-radius: 100%;
+    background-color: black;
+    margin-right: 10px;
+}
+
+.Color4 {
+    padding: 2px 11px;
+    border-radius: 100%;
+    background-color:seagreen;
+    margin-right: 10px;
+}
+
+.FeatureClass {
+    margin-top: 60px;
+}
+
+.Bullet {
+    font-size: 16px;
+    padding-left: 20px;
+    line-height: 30px;
+    margin-left: 30px;
+}
+
+.AdImages{ 
+
+    float: left;
+    width: 20%;
+    padding: 20px;
+    text-align: center;
+    margin-left: 30px;
+    display: flex;
+    
+}
+
+.AdClass::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+  
+  @media (max-width: 768px) {
+
+    nav {
+        display:flex;
+        justify-content: center;
+        align-items: left;
+    }
+
+    .logo {
+       margin-right: 100px;
+       margin-bottom: 50px;
+    }
+    
+    .nav-links {
+        margin-top: 40px;
+        display: flex;
+        justify-content:space-around;
+        width: 5%;
+        align-items: left;
+        margin-right: 200px;
+    }
+    
+    .nav-links li {
+        padding-top: 5px;
+        padding: 15px 5px;
+        white-space: nowrap;
+    }
+    
+    .SearchBar { 
+        float:left;
+        height: 80px;
+        margin-left: 10px;
+        width: 15%;
+    }
+        
+    input[type=text] {
+        width: 400px;
+        padding: 7px;
+        margin-left: -100px;
+    }
+
+    .Cart {
+        float:left;
+        height: 40px;
+        margin-right: 250px;
+        margin-left: 15px;
+        margin-top: 5px;
+    }
+
+    .parent {
+        flex-wrap: wrap;
+    }
+
+    .content {
+        flex: 50%;
+        margin-bottom: 70px;
+        padding-left: 200px;
+    }
+
+    .image { 
+        margin-right: -40px;
+        flex: 50%;
+    }
+
+    .ItemColor {
+        margin-left: 260px;
+    }
+
+    .AdImages {
+        display: flex;
+        margin-left: -10px;
+        margin-top: 10px;
+        flex-direction: row;
+    }
+
+    .content, .image {
+        flex:100%;
+    } 
+}
